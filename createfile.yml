@@ -1,0 +1,9 @@
+- name: create_directory
+  hosts: all
+  tasks:
+
+   - name: Creates directory
+     file:
+       path: /tmp/
+       name: test1
+       state: directory
